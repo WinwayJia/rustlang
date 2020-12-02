@@ -1,8 +1,13 @@
+mod alg;
 mod flow;
 mod function;
+mod json;
 mod lib;
 mod math;
 mod owner;
+mod std;
+mod structure;
+mod vector;
 
 mod aaa {
     pub fn print() {
@@ -15,6 +20,16 @@ fn main() {
 
     function::say_hi("hello");
 
+    let mut arr: [i32; 5] = [4, 2, 1, 5, 3];
+    alg::sort::partion(&mut arr);
+
+    std::box_demo::demo();
+
+    // enum
+    structure::enum_demo::demo();
+}
+
+fn more() {
     use flow::if_usage;
     if_usage::demo(12);
     if_usage::demo(1);
@@ -32,6 +47,22 @@ fn main() {
     loop_usage::fab(10);
 
     owner::ownership::demo();
+    println!(
+        "first_world return: {}",
+        owner::slice::first_word("hello world".to_string())
+    );
+
+    structure::struct_demo();
+    let rect = structure::Rectangle {
+        width: 3.2,
+        height: 9.6,
+    };
+    println!("area={}", rect.area());
+    println!("square={:#?}", structure::Rectangle::square(3.2));
+    let rect2 = structure::Rectangle::new(3.2, 6.3);
+    println!("rect2={:#?}", rect2);
+
+    // json::demo::demo();
 }
 
 fn path_mod() {
