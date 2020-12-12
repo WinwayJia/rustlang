@@ -7,6 +7,7 @@ mod math;
 mod owner;
 mod std;
 mod structure;
+mod thread;
 mod vector;
 
 mod aaa {
@@ -27,6 +28,8 @@ fn main() {
 
     // enum
     structure::enum_demo::demo();
+
+    thread::demo::demo();
 }
 
 fn more() {
