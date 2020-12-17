@@ -1,6 +1,7 @@
 mod alg;
 mod flow;
 mod function;
+mod genernic;
 mod json;
 mod lib;
 mod math;
@@ -8,6 +9,7 @@ mod owner;
 mod std;
 mod structure;
 mod thread;
+mod trait_demo;
 mod vector;
 
 mod aaa {
@@ -30,6 +32,9 @@ fn main() {
     structure::enum_demo::demo();
 
     thread::demo::demo();
+
+    // genernic::demo::largest(arr[:]);
+    trait_demo::demo::demo()
 }
 
 fn more() {
