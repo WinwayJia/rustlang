@@ -11,6 +11,7 @@ mod structure;
 mod thread;
 mod trait_demo;
 mod vector;
+mod webserver;
 
 mod aaa {
     pub fn print() {
@@ -34,7 +35,9 @@ fn main() {
     thread::demo::demo();
 
     // genernic::demo::largest(arr[:]);
-    trait_demo::demo::demo()
+    trait_demo::demo::demo();
+
+    webserver::demo::demo();
 }
 
 fn more() {
