@@ -12,6 +12,7 @@ mod thread;
 mod trait_demo;
 mod vector;
 mod webserver;
+mod collections;
 
 mod aaa {
     pub fn print() {
@@ -38,6 +39,8 @@ fn main() {
     trait_demo::demo::demo();
 
     webserver::demo::demo();
+
+    collections::vector::demo();
 }
 
 fn more() {
